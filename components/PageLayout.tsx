@@ -66,6 +66,8 @@ export default function PageLayout({ title, subtitle, children }: PageLayoutProp
         />
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="flex items-center gap-5 px-6 md:px-10 py-6 border-b md:border-b-0 md:border-r border-gold/15">
+            <div className="flex items-center justify-center shrink-0 w-13 h-13 rounded-full border-2 border-gold bg-gold/5">
+              <Phone className="text-gold w-5 h-5" />
             </div>
             <div>
               <p className="font-heading font-medium text-[15px] tracking-[0.08em] text-white mb-1">
@@ -77,6 +79,8 @@ export default function PageLayout({ title, subtitle, children }: PageLayoutProp
             </div>
           </div>
           <div className="flex items-center gap-5 px-6 md:px-10 py-6 border-b md:border-b-0 md:border-r border-gold/15">
+            <div className="flex items-center justify-center shrink-0 w-13 h-13 rounded-full border-2 border-gold bg-gold/5">
+              <MapPin className="text-gold w-5 h-5" />
             </div>
             <div>
               <p className="font-heading font-medium text-[15px] tracking-[0.08em] text-white mb-1">

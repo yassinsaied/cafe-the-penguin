@@ -32,7 +32,9 @@ export default function Header() {
             />
           </div>
           <div className="leading-none">
-            <p className="font-heading font-bold text-xl md:text-2xl tracking-[0.22em] text-white">CAFE</p>
+            <p className="font-heading font-bold text-xl md:text-2xl tracking-[0.22em] text-white">
+              CAFE
+            </p>
             <p className="font-body font-light text-[10px] md:text-[11px] tracking-[0.36em] text-gold mt-0.5">
               THE PENGUIN
             </p>
@@ -94,9 +96,7 @@ export default function Header() {
                   } ${i === 0 ? '' : ''}`}
                 >
                   {item}
-                  {active && (
-                    <span className="block mx-auto mt-1.5 w-6 h-0.5 bg-gold rounded" />
-                  )}
+                  {active && <span className="block mx-auto mt-1.5 w-6 h-0.5 bg-gold rounded" />}
                 </Link>
               );
             })}
@@ -106,4 +106,3 @@ export default function Header() {
     </>
   );
 }
-
