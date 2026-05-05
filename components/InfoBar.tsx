@@ -3,10 +3,10 @@ import InfoItem from './InfoItem';
 
 export default function InfoBar() {
   return (
-    <div className="absolute bottom-0 left-0 right-0 bg-[rgba(12,8,3,0.92)] backdrop-blur-[8px]">
+    <div className="relative md:absolute md:bottom-0 md:left-0 md:right-0 bg-[rgba(12,8,3,0.92)] backdrop-blur-sm">
       {/* Gold top accent line */}
       <div
-        className="h-[3px]"
+        className="h-0.75"
         style={{
           background: 'linear-gradient(to right, #3D1F00, #C9A84C 30%, #C9A84C 70%, #3D1F00)',
         }}

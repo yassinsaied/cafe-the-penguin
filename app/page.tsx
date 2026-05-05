@@ -5,8 +5,8 @@ import InfoBar from '@/components/InfoBar';
 
 export default function HomePage() {
   return (
-    <div className="w-full  h-screen overflow-hidden bg-espresso">
-      {/* Hero — full screen */}
+    <div className="w-full min-h-screen bg-espresso">
+      {/* Hero — full screen on desktop, natural height on mobile */}
       <div className="relative min-h-screen flex flex-col">
         {/* ── Background image + overlays ── */}
         <div className="absolute inset-0">
