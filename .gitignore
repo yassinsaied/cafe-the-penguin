@@ -42,4 +42,5 @@ yarn-error.log*
 # local agent instructions (not for version control)
 CLAUDE.md
 AGENTS.md
+.copilot-instructions.md  # Old root-level file if exists
 next-env.d.ts
