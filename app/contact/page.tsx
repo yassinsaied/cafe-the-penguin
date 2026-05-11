@@ -9,7 +9,7 @@ const CONTACT_ITEMS = [
   },
   {
     icon: <Mail className="w-5 h-5 text-gold" />,
-    title: 'hello@cafethepenguin.com',
+    title: 'hello@procafeservice.com',
     sub: 'Réponse sous 24h',
   },
   {
@@ -38,15 +38,15 @@ export default function ContactPage() {
               className="font-heading font-bold text-white uppercase tracking-[0.06em] mb-3"
               style={{ fontSize: 'clamp(24px, 3.5vw, 40px)' }}
             >
-              Parlons café
+              Parlons avec nous
             </h2>
             <div
               className="w-12 h-0.75 rounded mb-6"
-              style={{ background: 'linear-gradient(to right, #1e3a6e, #C9A84C, #1e3a6e)' }}
+              style={{ background: 'linear-gradient(to right, #3D1F00, #C9A84C, #3D1F00)' }}
             />
-            <p className="font-body font-light text-cream text-[15px] leading-[1.85] mb-10">
-              Que ce soit pour une réservation, une commande spéciale ou simplement pour en savoir
-              plus sur nos offres, nous sommes là pour vous.
+            <p className="font-body font-normal text-[15px] text-gold-light tracking-[0.04em] leading-[1.85] mb-10">
+              Vous avez une machine à café à réparer, entretenir ou vous cherchez un modèle
+              professionnel ? Pro Café Service est à votre écoute pour vous accompagner.
             </p>
 
             <div className="space-y-6">
@@ -75,7 +75,7 @@ export default function ContactPage() {
             </h3>
             <div
               className="w-10 h-0.5 mb-7"
-              style={{ background: 'linear-gradient(to right, #1e3a6e, #C9A84C, #1e3a6e)' }}
+              style={{ background: 'linear-gradient(to right, #3D1F00, #C9A84C, #3D1F00)' }}
             />
 
             <form className="space-y-5" noValidate>

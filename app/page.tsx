@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <Image
             src="/hero.jpg"
-            alt="Café The Penguin interior"
+            alt="Pro Café Service – intérieur"
             fill
             className="object-cover object-center"
             priority

@@ -5,9 +5,11 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ## Available Skills
 
 ### 1. Deploy to Vercel
+
 **Triggers:** "deploy", "push live", "preview deployment", "check status"
 
 **Key workflow:**
+
 1. Check git remote: `git remote get-url origin`
 2. Check if linked: `.vercel/project.json` or `.vercel/repo.json`
 3. Check CLI auth: `vercel whoami`
@@ -21,9 +23,11 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ---
 
 ### 2. React Best Practices (CRITICAL)
+
 **Triggers:** React/Next.js components, performance, data fetching, bundle optimization
 
 **Priority order:**
+
 1. **Eliminating Waterfalls** (`async-*`) — Check cheap conditions before await, Promise.all() for parallel, Suspense for streaming
 2. **Bundle Size** (`bundle-*`) — Direct imports, avoid barrels, statically analyzable paths, dynamic imports
 3. **Server Performance** (`server-*`)
@@ -37,9 +41,11 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ---
 
 ### 3. Composition Patterns
+
 **Triggers:** Component architecture, reusable components, boolean props, compound components, React 19 APIs
 
 **Topics:**
+
 - Avoid boolean prop explosion
 - Compound components pattern
 - Render props vs children
@@ -50,6 +56,7 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ---
 
 ### 4. View Transitions
+
 **Triggers:** Page transitions, route animations, smooth UI updates, shared elements
 
 **File:** `.agents/skills/vercel-react-view-transitions/SKILL.md`
@@ -57,6 +64,7 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ---
 
 ### 5. Web Design Guidelines
+
 **Triggers:** UI review, accessibility audit, design best practices
 
 **File:** `.agents/skills/web-design-guidelines/SKILL.md`
@@ -66,17 +74,20 @@ This configuration enables GitHub Copilot to use integrated agent skills for opt
 ## Usage Rules
 
 ✅ **Always:**
+
 - Check the relevant skill file before responding to architecture questions
 - Reference specific rules by prefix (e.g., `async-parallel`)
 - Run `npm run build` before pushing
 - Verify no regressions introduced
 
 ✅ **For Deployment:**
+
 - Run the 4 state checks first
 - Propose appropriate method
 - Ask for team if multiple exist
 
 ✅ **For React Code:**
+
 - Apply best practices by priority
 - Start with CRITICAL (waterfalls, bundle)
 - Reference rule files when making changes

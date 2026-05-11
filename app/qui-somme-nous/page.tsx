@@ -4,26 +4,26 @@ import PageLayout from '@/components/PageLayout';
 const VALUES = [
   {
     icon: <Award className="w-7 h-7 text-gold" />,
-    title: 'QUALITÉ',
-    desc: "Nous n'acceptons rien de moins que l'excellence. Des grains de café aux pâtisseries maison, chaque détail est pensé avec soin.",
+    title: 'EXPERTISE',
+    desc: 'Nous maîtrisons chaque type de machine à café. Nos techniciens certifiés garantissent une réparation durable et un service sans compromis.',
   },
   {
     icon: <Heart className="w-7 h-7 text-gold" />,
-    title: 'PASSION',
-    desc: "Le café est notre art. Chaque tasse est préparée avec l'enthousiasme de ceux qui aiment profondément ce qu'ils font.",
+    title: 'FIABILITÉ',
+    desc: "Pro Café Service, c'est un engagement : être présent quand vous avez besoin, avec rapidité, transparence et expertise.",
   },
   {
     icon: <Leaf className="w-7 h-7 text-gold" />,
-    title: 'DURABILITÉ',
-    desc: 'Nous nous engageons à sourcer éthiquement et à réduire notre empreinte environnementale à chaque étape de notre processus.',
+    title: 'INNOVATION',
+    desc: 'Nous restons à jour avec les dernières technologies pour vous offrir les meilleures machines et solutions de maintenance.',
   },
 ];
 
 const STATS = [
   { num: '2019', label: 'Fondé' },
-  { num: '50+', label: 'Variétés de café' },
-  { num: '200+', label: 'Clients / jour' },
-  { num: '15+', label: "Membres d'équipe" },
+  { num: '500+', label: 'Machines réparées' },
+  { num: '1000+', label: 'Clients satisfaits' },
+  { num: '20+', label: "Années d'expérience" },
 ];
 
 export default function QuiSommesNousPage() {
@@ -46,16 +46,18 @@ export default function QuiSommesNousPage() {
             </h2>
             <div
               className="w-12 h-0.75 rounded mb-6"
-            style={{ background: 'linear-gradient(to right, #1e3a6e, #C9A84C, #1e3a6e)' }}
+              style={{ background: 'linear-gradient(to right, #3D1F00, #C9A84C, #3D1F00)' }}
             />
-            <p className="font-body font-light text-cream text-[15px] leading-[1.85] mb-4">
-              Fondé en 2019 au cœur d&apos;Islamabad, Café The Penguin est né d&apos;une vision
-              simple&nbsp;: offrir bien plus qu&apos;une simple tasse de café. Nous croyons en
-              l&apos;art du café comme vecteur de convivialité, de culture et de confort.
+            <p className="font-body font-normal text-[15px] text-gold-light tracking-[0.04em] leading-[1.85] mb-4">
+              Fondé en 2019 au cœur d&apos;Islamabad, Pro Café Service est né de la conviction que
+              chaque café mérite une machine fiable et bien entretenue. Spécialistes en réparation,
+              maintenance et vente de machines à café, nous accompagnons professionnels et
+              particuliers au quotidien.
             </p>
-            <p className="font-body font-light text-muted text-sm leading-[1.85]">
-              Notre équipe de baristas passionnés sélectionne soigneusement chaque grain, prépare
-              chaque tasse avec précision, et accueille chaque client comme un ami de longue date.
+            <p className="font-body font-normal text-[15px] text-gold-light tracking-[0.04em] leading-[1.85]">
+              Notre équipe de techniciens certifiés diagnostique, répare et entretient chaque
+              machine avec rigueur et passion, garantissant une performance optimale et une longue
+              durée de vie.
             </p>
           </div>
 
@@ -65,12 +67,12 @@ export default function QuiSommesNousPage() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-10">
               <p className="font-display italic text-gold/60 text-7xl leading-none mb-2">&ldquo;</p>
               <p className="font-display italic text-cream text-[17px] leading-[1.75] mb-5">
-                Le café n&apos;est pas seulement une boisson, c&apos;est un moment de partage, une
-                expérience à vivre.
+                Une machine à café bien entretenue, c&apos;est le secret des cafés
+                d&apos;excellence. C&apos;est notre promesse chez Pro Café Service.
               </p>
               <div className="w-8 h-0.5 bg-gold mx-auto mb-3" />
               <p className="font-heading text-gold text-[11px] tracking-[0.20em] uppercase">
-                — Fondateur, Café The Penguin
+                — Fondateur, Pro Café Service
               </p>
             </div>
           </div>
@@ -106,7 +108,7 @@ export default function QuiSommesNousPage() {
           </h2>
           <div
             className="w-12 h-0.75 rounded mx-auto mb-12"
-            style={{ background: 'linear-gradient(to right, #1e3a6e, #C9A84C, #1e3a6e)' }}
+            style={{ background: 'linear-gradient(to right, #3D1F00, #C9A84C, #3D1F00)' }}
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -131,7 +133,8 @@ export default function QuiSommesNousPage() {
         {/* ── CTA ── */}
         <section className="text-center pb-4">
           <p className="font-body font-light text-muted text-sm mb-6">
-            Venez nous rencontrer et découvrir notre univers autour d&apos;un café.
+            Contactez Pro Café Service pour un devis, une réparation urgente ou une mise à niveau de
+            votre parc machines.
           </p>
           <a
             href="/contact"

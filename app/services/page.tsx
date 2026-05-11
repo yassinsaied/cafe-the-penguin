@@ -1,44 +1,44 @@
-import { Coffee, UtensilsCrossed, Users } from 'lucide-react';
+import { Coffee, Wrench, Truck } from 'lucide-react';
 import PageLayout from '@/components/PageLayout';
 
 const SERVICES = [
   {
     icon: <Coffee className="w-8 h-8 text-gold" />,
-    subtitle: 'Specialty Coffee',
-    title: 'CAFÉ & ESPRESSO',
+    subtitle: 'Machines & Café',
+    title: 'VENTE DE CAFÉ & MACHINES',
     description:
-      "From silky flat whites to bold espressos, our baristas craft every cup with precision using single-origin beans sourced from the world's finest regions.",
+      'Nous proposons une sélection de machines à café professionnelles et domestiques ainsi que des cafés de qualité pour particuliers et entreprises.',
     items: [
-      'Espresso & Americano',
-      'Flat White & Latte',
-      'Cold Brew & Iced Drinks',
-      'Specialty Pour-Overs',
+      'Machines à espresso professionnelles',
+      'Machines à café automatiques',
+      'Café en grains & moulu',
+      'Accessoires barista',
     ],
   },
   {
-    icon: <UtensilsCrossed className="w-8 h-8 text-gold" />,
-    subtitle: 'Fresh Daily',
-    title: 'PÂTISSERIE & SNACKS',
+    icon: <Wrench className="w-8 h-8 text-gold" />,
+    subtitle: 'Maintenance & Réparation',
+    title: 'ENTRETIEN & SAV',
     description:
-      'Freshly baked pastries and artisan snacks prepared in-house every morning, paired perfectly with your favourite brew.',
+      'Service complet de maintenance, dépannage et réparation de machines à café pour garantir performance et longévité.',
     items: [
-      'Croissants & Danish',
-      'Artisan Cakes & Tarts',
-      'Savoury Sandwiches',
-      'Seasonal Specials',
+      'Maintenance préventive',
+      'Réparation de machines',
+      'Détartrage & nettoyage',
+      'Service après-vente rapide',
     ],
   },
   {
-    icon: <Users className="w-8 h-8 text-gold" />,
-    subtitle: 'Private Events',
-    title: 'ÉVÉNEMENTS PRIVÉS',
+    icon: <Truck className="w-8 h-8 text-gold" />,
+    subtitle: 'Professionnels & Particuliers',
+    title: 'INSTALLATION & LIVRAISON',
     description:
-      'Transform your gatherings into unforgettable memories. Our dedicated team creates bespoke experiences for corporate and personal events.',
+      'Installation de machines et livraison de café pour bureaux, restaurants et particuliers avec accompagnement personnalisé.',
     items: [
-      'Corporate Meetings',
-      'Birthday Celebrations',
-      'Café Privatisation',
-      'Catering & Delivery',
+      'Installation sur site',
+      'Livraison de café',
+      'Formation à l’utilisation',
+      'Contrats pour entreprises',
     ],
   },
 ];
@@ -49,9 +49,9 @@ export default function ServicesPage() {
       <section className="px-6 py-16 max-w-6xl mx-auto w-full">
         {/* Intro */}
         <div className="text-center mb-14">
-          <p className="font-body font-light text-cream text-[15px] leading-[1.8] max-w-145 mx-auto">
-            At Café The Penguin, we believe every visit should be an experience. Discover our range
-            of offerings crafted with passion and care.
+          <p className="font-body font-normal text-[15px] text-gold-light tracking-[0.04em] leading-[1.85] max-w-145 mx-auto">
+            Pro Café Service vous propose une gamme complète de solutions pour vos machines à café :
+            réparation, maintenance, vente et installation. Service rapide, expertise reconnue.
           </p>
         </div>
 
@@ -83,12 +83,12 @@ export default function ServicesPage() {
                 className="h-0.5 mb-5 transition-all duration-500 group-hover:opacity-60"
                 style={{
                   width: '40px',
-                  background: 'linear-gradient(to right, #1e3a6e, #C9A84C, #1e3a6e)',
+                  background: 'linear-gradient(to right, #3D1F00, #C9A84C, #3D1F00)',
                 }}
               />
 
               {/* Description */}
-              <p className="font-body font-light text-muted text-sm leading-[1.75] mb-6">
+              <p className="font-body font-normal text-[15px] text-gold-light tracking-[0.04em] leading-[1.85] mb-6">
                 {service.description}
               </p>
 
@@ -111,7 +111,8 @@ export default function ServicesPage() {
         {/* CTA */}
         <div className="text-center mt-14">
           <p className="font-body font-light text-muted text-sm mb-6">
-            Envie d&apos;en savoir plus sur nos offres ou de réserver un événement ?
+            Votre machine a besoin d&apos;une réparation ou d&apos;un entretien ? Contactez-nous
+            pour un devis gratuit.
           </p>
           <a
             href="/contact"

@@ -21,22 +21,12 @@ export default function Header() {
       <header className="relative z-50 flex items-center justify-between px-6 md:px-10 py-2 border-b border-gold/20 bg-espresso/55 backdrop-blur-[6px]">
         {/* ── Logo ── */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <div className="relative w-14 h-14 md:w-16 md:h-16 drop-shadow-[0_2px_8px_rgba(201,168,76,0.35)]">
-            <Image
-              src="/logo.png"
-              alt="Cafe The Penguin logo"
-              fill
-              sizes="(max-width: 768px) 56px, 64px"
-              className="object-contain"
-              priority
-            />
-          </div>
           <div className="leading-none">
             <p className="font-heading font-bold text-xl md:text-2xl tracking-[0.22em] text-white">
-              CAFE
+              PRO CAFÉ
             </p>
             <p className="font-body font-light text-[10px] md:text-[11px] tracking-[0.36em] text-gold mt-0.5">
-              THE PENGUIN
+              SERVICE
             </p>
           </div>
         </Link>

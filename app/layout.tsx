@@ -22,8 +22,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Cafe The Penguin',
-  description: 'The best coffee testing experience in Pakistan',
+  title: 'Pro Café Service',
+  description: 'Pro Café Service – Coffee expertise, catering & événements à Islamabad.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
